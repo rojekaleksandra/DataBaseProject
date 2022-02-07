@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Label?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="manage.ClassesController" prefHeight="620.0" prefWidth="810.0">
+    <children>
+        <Label translateY="-250" text="Zajęcia w klubie" textFill="WHITE">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <ScrollPane translateX="10" translateY="40" maxHeight="500.0" maxWidth="680.0" minHeight="500" minWidth="680">
+            <content>
+                <TableView fx:id="classesT"  maxHeight="500.0" maxWidth="680.0" minHeight="500" minWidth="680">
+                    <placeholder>
+                        <Label text="Klub nie ma jeszcze żadnych zajęć."/>
+                    </placeholder>
+                    <columns>
+                        <TableColumn fx:id="category" prefWidth="100" text="Kategoria"/>
+                        <TableColumn fx:id="name" prefWidth="140" text="Nazwa" />
+                        <TableColumn fx:id="description" prefWidth="2400" text="Opis zajęć" />
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+    </children>
+</StackPane>

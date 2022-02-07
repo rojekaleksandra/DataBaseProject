@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx"  xmlns:fx="http://javafx.com/fxml"  fx:controller="client.AddReservationController" prefHeight="620.0" prefWidth="810.0">
+<children>
+    <Label translateY="-200" text="Dodaj rezerwacje" textFill="WHITE">
+        <font>
+            <Font size="40.0" />
+        </font>
+    </Label>
+    <Label translateX="-175" translateY="-80" text="Kategoria:" textFill="WHITE">
+        <font>
+            <Font name="Verdana" size="18.0" />
+        </font>
+    </Label>
+    <ComboBox fx:id="categoryField" translateY="-80" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Kategoria" />
+    <Label translateX="-165" translateY="-20" text="Nazwa zajęć:" textFill="WHITE">
+        <font>
+            <Font name="Verdana" size="18.0" />
+        </font>
+    </Label>
+    <ComboBox fx:id="nameField" translateY="-20" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Nazwa" />
+    <Label translateX="-167" translateY="40" text="Prowadzący:" textFill="WHITE">
+        <font>
+            <Font name="Verdana" size="18.0" />
+        </font>
+    </Label>
+    <ComboBox fx:id="coachField" translateY="40" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Prowadzący" />
+    <Label translateX="-187" translateY="100" text="Termin:" textFill="WHITE">
+        <font>
+            <Font name="Verdana" size="18.0" />
+        </font>
+    </Label>
+    <ComboBox fx:id="dateField" translateY="100" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Termin" />
+    <Button translateY="180"  mnemonicParsing="false" onMouseClicked="#addReservation" prefHeight="40.0" maxWidth="120" text="Zarezerwuj" />
+</children>
+</StackPane>

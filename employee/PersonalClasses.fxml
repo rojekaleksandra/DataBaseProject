@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+
+<?import javafx.scene.control.Button?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="employee.PersonalClassesController" prefHeight="620.0" prefWidth="810.0">
+    <children>
+        <Label translateY="-250" text="Moje zajęcia personalne" textFill="WHITE">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <ScrollPane translateX="10" translateY="0" maxHeight="400.0" maxWidth="437.0" minHeight="400" minWidth="437">
+            <content>
+                <TableView fx:id="personalClassesT"  maxHeight="400.0" maxWidth="420.0" minHeight="400" minWidth="420">
+                    <placeholder>
+                        <Label text="Nie masz jeszcze żadnych zajęć personalnych."/>
+                    </placeholder>
+                    <columns>
+                        <TableColumn fx:id="client" prefWidth="140" text="Klient" />
+                        <TableColumn fx:id="room" prefWidth="100" text="Sala" />
+                        <TableColumn fx:id="date" prefWidth="120" text="Termin" />
+                        <TableColumn fx:id="price" prefWidth="50" text="Cena" />
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+        <Button translateY="250" mnemonicParsing="false" onMouseClicked="#saveReport" prefHeight="40.0" maxWidth="200" text="Zapisz raport" />
+    </children>
+</StackPane>

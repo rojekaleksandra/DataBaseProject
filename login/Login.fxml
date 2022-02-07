@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="750.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="login.LoginController">
+    <children>
+      <StackPane prefHeight="150.0" prefWidth="950.0" style="-fx-background-color: #CD5C5C;">
+         <children>
+            <Label alignment="center" text="Klub fitness">
+               <font>
+                  <Font name="Verdana Bold" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </StackPane>
+      <StackPane prefHeight="650.0" prefWidth="950.0">
+         <children>
+            <Label  translateY="-120" text="Witamy na stronie naszego klubu">
+               <font>
+                  <Font name="Verdana Bold" size="30.0" />
+               </font>
+            </Label>
+            <Label translateY="-45" text="Zaloguj się">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <RadioButton fx:id="employeeButton" translateX="-85" translateY="3" mnemonicParsing="false" text="Pracownik">
+               <toggleGroup>
+                  <ToggleGroup fx:id="role" />
+               </toggleGroup>
+            </RadioButton>
+            <RadioButton fx:id="userButton" translateX="100" translateY="3" mnemonicParsing="false" selected="true" text="Użytkownik" toggleGroup="$role" />
+            <Label translateX="-125" translateY="63" text="Login:">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="loginField" translateY="63" translateX="17" prefHeight="35.0" maxWidth="180" promptText="Login" />
+            <Label translateX="-125" translateY="115" text="Hasło:">
+               <font>
+                  <Font name="Verdana" size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="passField" translateY="115" translateX="17" prefHeight="35.0" maxWidth="180" promptText="Haslo" />
+            <Button translateY="170" translateX="10" mnemonicParsing="false" onMouseClicked="#login" prefHeight="40.0" maxWidth="120"  text="Zaloguj się" />
+            <Label translateY="260" translateX="10" text="Nie masz jeszcze konta ? ">
+               <font>
+                  <Font name="Verdana" size="16.0" />
+               </font>
+            </Label>
+            <Button translateY="310" translateX="10" mnemonicParsing="false" onMouseClicked="#register" prefHeight="40.0" maxWidth="120" text="Zarejestruj się" />
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

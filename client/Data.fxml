@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="client.DataController" prefHeight="620.0" prefWidth="810.0" >
+        <children>
+            <Label translateY="-200" text="Moje dane" textFill="WHITE">
+                <font>
+                    <Font size="60.0" />
+                </font>
+            </Label>
+            <Label translateY="-75" translateX="-215" text="Imię:" textFill="WHITE">
+                <font>
+                    <Font size="35.0" />
+                </font>
+            </Label>
+            <Label fx:id="name" translateY="-75" translateX="160" text="Default" textFill="WHITE">
+                <font>
+                    <Font size="35.0" />
+                </font>
+            </Label>
+            <Label translateY="-20" translateX="-180" text="Nazwisko:" textFill="WHITE">
+                <font>
+                    <Font size="35.0" />
+                </font>
+            </Label>
+            <Label fx:id="surname" translateY="-20" translateX="160" text="Default" textFill="WHITE">
+                <font>
+                    <Font size="35.0" />
+                </font>
+            </Label>
+            <Label translateY="35" translateX="-138" text="Numer telefonu:" textFill="WHITE">
+                <font>
+                    <Font size="35.0" />
+                </font>
+            </Label>
+            <Label fx:id="phoneNumber" translateY="35" translateX="160" text="Default" textFill="WHITE">
+                <font>
+                    <Font size="25.0" />
+                </font>
+            </Label>
+            <Label translateY="90" translateX="-208" text="Email:" textFill="WHITE">
+                <font>
+                    <Font size="35.0" />
+                </font>
+            </Label>
+            <Label fx:id="email" translateY="90" translateX="160" text="Default" textFill="WHITE">
+                <font>
+                    <Font size="25.0" />
+                </font>
+            </Label>
+        </children>
+    </StackPane>

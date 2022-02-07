@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="employee.EmployeeController" prefHeight="750.0" prefWidth="950.0" style="-fx-background-color: #696969">
+    <children>
+        <StackPane translateX="20" translateY="10" prefHeight="130.0" prefWidth="910.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 18 18 18 18;">
+            <children>
+                <Label translateY="-30" text="Cześć, " textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="nameLabel" translateY="20" text="imienazwisko" textFill="WHITE">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+        <StackPane translateX="20" translateY="200" prefHeight="500.0" prefWidth="140.0" style="-fx-background-color: #CD5C5C;  -fx-background-radius: 18 18 18 18;">
+            <children>
+                <Button translateY="-150" mnemonicParsing="false" onMouseClicked="#manage" prefHeight="30.0" prefWidth="120.0" text="Zarządzaj klubem" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="-100" mnemonicParsing="false" onMouseClicked="#data" prefHeight="30.0" prefWidth="120.0" text="Moje dane" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="-50" mnemonicParsing="false" onMouseClicked="#classes" prefHeight="30.0" prefWidth="120.0" text="Zajęcia" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="0" mnemonicParsing="false" onMouseClicked="#addClasses" prefHeight="30.0" prefWidth="120.0" text="Dodaj zajęcia" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="50" mnemonicParsing="false" onMouseClicked="#personal_classes" prefHeight="30.0" prefWidth="120.0" text="Zajęcia personalne" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="110" mnemonicParsing="false" onMouseClicked="#addPersonalClasses" prefHeight="50.0" prefWidth="120.0" text="Dodaj zajęcia personalne" wrapText="true" textAlignment="CENTER"  style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="170" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="30.0" prefWidth="120.0" text="Wyloguj się"/>
+            </children>
+        </StackPane>
+        <StackPane fx:id="center" translateX="140" translateY="130" prefHeight="620.0" prefWidth="810.0" />
+    </children>
+</AnchorPane>

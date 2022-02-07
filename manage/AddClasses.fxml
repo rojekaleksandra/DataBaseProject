@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx"  xmlns:fx="http://javafx.com/fxml"  fx:controller="manage.AddClassesController" prefHeight="620.0" prefWidth="810.0">
+    <children>
+        <Label translateY="-220" text="Zarządzaj zajęciami" textFill="WHITE">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label translateX="-233" translateY="-100" text="Dodaj kategorię:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="categoryField" translateY="-100" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Kategoria" />
+        <Button translateY="-100" translateX="230" mnemonicParsing="false" onMouseClicked="#addCategory" prefHeight="40.0" maxWidth="120" text="Dodaj" />
+        <Label translateX="-233" translateY="-40" text="Dodaj opis zajęć:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <TextArea fx:id="descriptionField" translateY="-5" translateX="20" maxHeight="90.0" maxWidth="180" promptText="Opis zajęć" wrapText="true"/>
+        <Button translateY="-30" translateX="230" mnemonicParsing="false" onMouseClicked="#addDescription" prefHeight="40.0" maxWidth="120" text="Dodaj" />
+        <Label translateX="-243" translateY="85" text="Dodaj zajęcia:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="categoryCB" translateY="85" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Kategoria" />
+        <TextField fx:id="nameField" translateY="145" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Nazwa" />
+        <ComboBox fx:id="descriptionCB" translateY="205" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Opis zajęć" />
+        <Button translateY="205"  translateX="230" mnemonicParsing="false" onMouseClicked="#addClasses" prefHeight="40.0" maxWidth="120" text="Dodaj" />
+    </children>
+</StackPane>

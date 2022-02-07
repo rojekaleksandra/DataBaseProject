@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.text.Font?>
+<AnchorPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="manage.ManageClubController" prefHeight="750.0" prefWidth="950.0" style="-fx-background-color: #696969">
+    <children>
+        <StackPane translateX="20" translateY="10" prefHeight="130.0" prefWidth="910.0" style="-fx-background-color: #CD5C5C; -fx-background-radius: 18 18 18 18;">
+            <children>
+                <Label translateY="-30" text="Cześć, " textFill="WHITE">
+                    <font>
+                        <Font size="30.0" />
+                    </font>
+                </Label>
+                <Label fx:id="nameLabel" translateY="20" text="imienazwisko" textFill="WHITE">
+                    <font>
+                        <Font size="40.0" />
+                    </font>
+                </Label>
+            </children>
+        </StackPane>
+        <StackPane translateX="20" translateY="200" prefHeight="500.0" prefWidth="140.0" style="-fx-background-color: #CD5C5C;  -fx-background-radius: 18 18 18 18;">
+            <children>
+                <Button translateY="-140" mnemonicParsing="false" onMouseClicked="#classes" prefHeight="30.0" prefWidth="120.0" text="Zajęcia" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="-80" mnemonicParsing="false" onMouseClicked="#addClasses" prefHeight="50.0" prefWidth="120.0" text="Zarządzaj zajęciami" wrapText="true" textAlignment="CENTER" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="-20" mnemonicParsing="false" onMouseClicked="#equipmentAndRoom" prefHeight="30.0" prefWidth="120.0" text="Sale i sprzęt" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="35" mnemonicParsing="false" onMouseClicked="#addEquipmentAndRoom" prefHeight="50.0" prefWidth="120.0" text="Zarządzaj salami i sprzętem" wrapText="true" textAlignment="CENTER" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="90" mnemonicParsing="false" onMouseClicked="#close" prefHeight="30.0" prefWidth="120.0" text="Wyjdź z managera" style="-fx-text-fill:#CD5C5C; "/>
+                <Button translateY="140" mnemonicParsing="false" onMouseClicked="#logout" prefHeight="30.0" prefWidth="120.0" text="Wyloguj się"/>
+            </children>
+        </StackPane>
+        <StackPane fx:id="center" translateX="140" translateY="130" prefHeight="620.0" prefWidth="810.0" />
+    </children>
+</AnchorPane>

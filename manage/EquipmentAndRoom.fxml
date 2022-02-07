@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Label?>
+
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="manage.EquipmentAndRoomController" prefHeight="620.0" prefWidth="810.0">
+    <children>
+        <Label translateY="-250" text="Sale wraz ze sprzętem w klubie" textFill="WHITE">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <ScrollPane translateX="10" translateY="40" maxHeight="500.0" maxWidth="500.0" minHeight="500" minWidth="500.0">
+            <content>
+                <TableView fx:id="roomAndEquipmentT"  maxHeight="500.0" maxWidth="500.0" minHeight="500" minWidth="500.0">
+                    <placeholder>
+                        <Label text="Klub nie ma jeszcze żadnych sal."/>
+                    </placeholder>
+                    <columns>
+                        <TableColumn fx:id="room" prefWidth="140" text="Sala"/>
+                        <TableColumn fx:id="amountR" prefWidth="100" text="Ilość miejsc"/>
+                        <TableColumn fx:id="equipment" prefWidth="140" text="Sprzęt" />
+                        <TableColumn fx:id="amount" prefWidth="100" text="Ilość sprzętu" />
+                    </columns>
+                </TableView>
+            </content>
+        </ScrollPane>
+    </children>
+</StackPane>

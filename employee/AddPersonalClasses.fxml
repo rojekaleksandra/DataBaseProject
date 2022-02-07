@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx"  xmlns:fx="http://javafx.com/fxml"  fx:controller="employee.AddPersonalClassesController" prefHeight="620.0" prefWidth="810.0">
+    <children>
+        <Label translateY="-200" text="Dodaj zajęcia personalne" textFill="WHITE">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label translateX="-160" translateY="-80" text="Klient:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="clientField" translateY="-80" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Klient" />
+        <Label translateX="-165" translateY="-20" text="Sala:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="roomField" translateY="-20" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Sala" />
+        <Label translateX="-155" translateY="40" text="Termin:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <Label translateX="-113" translateY="60" text="Format:  DD.MM.YYYY HH:MM" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="10.0" />
+            </font>
+        </Label>
+        <TextField fx:id="dateField" translateY="40" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Termin" />
+        <Label translateX="-161" translateY="100" text="Cena:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="priceField" translateY="100" translateX="110" prefHeight="35.0" maxWidth="180" promptText="Cena" />
+        <Button translateY="180"  mnemonicParsing="false" onMouseClicked="#addPersonalClasses" prefHeight="40.0" maxWidth="120" text="Dodaj" />
+    </children>
+</StackPane>

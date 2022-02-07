@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.Label?>
+
+<?import javafx.scene.control.Button?>
+<StackPane xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="client.ReservationsController" prefHeight="620.0" prefWidth="810.0">
+    <children>
+        <Label translateY="-250" text="Moje rezerwacje" textFill="WHITE">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+                <ScrollPane translateX="10" translateY="0" maxHeight="400.0" maxWidth="760.0" minHeight="400.0" minWidth="760">
+                    <content>
+                        <TableView fx:id="reservationT"  maxHeight="400.0" maxWidth="750.0" minHeight="400.0" minWidth="750">
+                            <placeholder>
+                                <Label text="Nie masz jeszcze żadnych rezerwacji."/>
+                            </placeholder>
+                            <columns>
+                                <TableColumn fx:id="category" prefWidth="100" text="Kategoria" />
+                                <TableColumn fx:id="name" prefWidth="140" text="Nazwa" />
+                                <TableColumn fx:id="coach" prefWidth="140" text="Prowadzący" />
+                                <TableColumn fx:id="room" prefWidth="100" text="Sala" />
+                                <TableColumn fx:id="date" prefWidth="110" text="Termin" />
+                                <TableColumn fx:id="price" prefWidth="50" text="Cena" />
+                                <TableColumn fx:id="status" prefWidth="105" text="Status" />
+                            </columns>
+                        </TableView>
+                    </content>
+                </ScrollPane>
+        <Button translateY="250" translateX="-100" mnemonicParsing="false" onMouseClicked="#saveReport" prefHeight="40.0" maxWidth="180" text="Zapisz raport" />
+        <Button translateY="250" translateX="100" mnemonicParsing="false" onMouseClicked="#confirmReservation" prefHeight="40.0" maxWidth="180" text="Potwierdź rezerwację" />
+    </children>
+</StackPane>

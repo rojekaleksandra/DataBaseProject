@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.Font?>
+
+<StackPane xmlns="http://javafx.com/javafx"  xmlns:fx="http://javafx.com/fxml"  fx:controller="manage.AddEquipmentAndRoomController" prefHeight="620.0" prefWidth="810.0">
+    <children>
+        <Label translateY="-220" text="Zarządzaj salami i sprzętem" textFill="WHITE">
+            <font>
+                <Font size="40.0" />
+            </font>
+        </Label>
+        <Label translateX="-273" translateY="-100" text="Dodaj salę:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="roomField" translateY="-100" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Sala" />
+        <TextField fx:id="amountRField" translateY="-40" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Ilość miejsc w sali" />
+        <Button translateY="-40" translateX="230" mnemonicParsing="false" onMouseClicked="#addRoom" prefHeight="40.0" maxWidth="120" text="Dodaj" />
+        <Label translateX="-265" translateY="20" text="Dodaj sprzęt:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <TextField fx:id="equipmentField" translateY="20" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Sprzęt" />
+        <Button translateY="20" translateX="230" mnemonicParsing="false" onMouseClicked="#addEquipment" prefHeight="40.0" maxWidth="120" text="Dodaj" />
+        <Label translateX="-233" translateY="80" text="Dodaj sprzęt do sali:" textFill="WHITE">
+            <font>
+                <Font name="Verdana" size="18.0" />
+            </font>
+        </Label>
+        <ComboBox fx:id="roomCB" translateY="80" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Sala" />
+        <ComboBox fx:id="equipmentCB" translateY="140" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Sprzęt" />
+        <TextField fx:id="amountField" translateY="200" translateX="20" prefHeight="35.0" maxWidth="180" promptText="Ilość sprzętu" />
+        <Button translateY="200" translateX="230" mnemonicParsing="false" onMouseClicked="#addEquipmentToRoom" prefHeight="40.0" maxWidth="120" text="Dodaj" />
+    </children>
+</StackPane>
